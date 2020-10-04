@@ -28,4 +28,19 @@
         app:layout_constraintTop_toTopOf="@id/text1"
         tools:targetApi="m" />
 
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:text="@string/timer"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:targetApi="m" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
