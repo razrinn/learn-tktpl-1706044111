@@ -45,7 +45,6 @@ class TimerActivity : AppCompatActivity() {
         btnStartTime.isEnabled = false
         btnStopTime.isEnabled = true
         isCounting = true
-        Log.d("INI LOG", "MASUK ONCLICK")
         txtTimeCounting.text = getMinuteSecond(seconds)
 
         val runnableTick = Runnable {
