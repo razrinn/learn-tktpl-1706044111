@@ -14,7 +14,19 @@ class MainActivity : AppCompatActivity() {
 
         btnClickMe.setOnClickListener {
             // make a toast on button click event
-            Toast.makeText(this, "Downloaded 4GB RAM", Toast.LENGTH_LONG).show()
+            Toast.makeText(
+                this,
+                capitalizeText("Berhasil mendownload RAM sebesar 16GB. Handphone menjadi 80% lebih cepat"),
+                Toast.LENGTH_LONG
+            ).show()
+        }
+    }
+
+    private external fun capitalizeText(text: String): String
+
+    companion object {
+        init {
+            System.loadLibrary("native-fun")
         }
     }
 }
